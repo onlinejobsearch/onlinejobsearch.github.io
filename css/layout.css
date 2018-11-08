@@ -1,0 +1,127 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    opacity: 0.9;
+    color: white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.col-4 {
+    padding: 5px 0;
+    margin: 5px 0;
+
+}
+.category-list .badge {
+    float: right;
+    margin-top: 2px;
+    max-width: 20%;
+}
+.badge.lightgrey {
+    background-color: #e5e5e6;
+    color: #9196a1;
+}
+.badge-prevent-overflow {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.badge {
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    background-color: #9196a1;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    hyphens: auto;
+    line-height: 1.2;
+    min-width: 10px;
+    overflow-wrap: break-word;
+    padding: 2px 8px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-wrap: normal;
+}
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #FF8C00;
+  padding: 0; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99; 
+  
+
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 12px;
+  border-radius: 2px;
+  color: white;
+}
+
+/* Style the logo */
+
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Display some links to the right */
+#navbar-right {
+  float: center;
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 10px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+
