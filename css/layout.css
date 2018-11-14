@@ -16,7 +16,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: ;
+    background-color: #ddd;
     color: black;
 }
 
@@ -98,6 +98,7 @@
 #navbar a:hover {
   background-color: #ddd;
   color: black;
+  text-transform: uppercase;
 }
 
 /* Style the active/current link */
