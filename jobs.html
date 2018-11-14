@@ -6,8 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 	    <link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/media-queries.css">
-		<link rel="stylesheet" type="text/css" href="js/fff.js">
-
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -36,65 +34,66 @@
 			<div class="container">
 				<div class="row align-items-end">
 
-					<div class="form-group col-4">
-						<label>Key words/Job Titles</label>
-						<input type="text" class="form-control" placeholder="e.g.Sales Executive">
+			
+                <div class="form-group col-4">
+						Key words/Job Titles: <input type="text" name="Key words/Job Titles" class="form-control" placeholder="e.g.Sales Executive" id="Jobtitles">
 					</div>
                    <div class="form-group col-5">
-						<label>Location</label>
-						<input type="text" class="form-control" placeholder="e.g.town or postcode">
+						Location: <input type="text" name="Location" class="form-control" placeholder="e.g.town or postcode" id="Location">
 					</div>
                 	 	<div class="form-group col-3">
                  			<label for ="exampleFormControlSelect1">Distance</label>
-                 			 <select class="form-control" id="exampleFormControlSelect1">
+                 			 <select class="form-control" id="Distance">
                               <option><a href="up to 15 miles">up to 15 miles</a></option>
-                              <option>up to 25 miles</option>
-                              <option>up to 35 miles</option>
-                              <option>up to 50 miles</option>
-                              <option>up to 70 miles</option>
-                              <option>up to 100 miles</option>
-                              <option>up to 150 miles</option>
-                              <option>up to 200 miles</option>
-                              <option>up to 400 miles</option>
-                              <option>up to 700 miles</option>
+                              <option class="distanceoption">up to 25 miles</option>
+                              <option class="distanceoption">up to 35 miles</option>
+                              <option class="distanceoption">up to 50 miles</option>
+                              <option class="distanceoption">up to 70 miles</option>
+                              <option class="distanceoption">up to 100 miles</option>
+                              <option class="distanceoption">up to 150 miles</option>
+                              <option class="distanceoption">up to 200 miles</option>
+                              <option class="distanceoption">up to 400 miles</option>
+                              <option class="distanceoption">up to 700 miles</option>
                            </select>
                         </div>
 					<div class="form-group col-2">
-						<label>Salary Min</label>
-						<input type="text" class="form-control" placeholder="e.g.$15,000" >
+						Salary Min:
+						<input type="text" name="Salary Min" class="form-control" placeholder="e.g.$15,000" id="SalaryMin">
 					</div>
 					<div class="form-group col-2">
-						<label>Salary Max</label>
-						<input type="text" class="form-control" placeholder="e.g.$25,000">
+						Salary Max: <input type="text" name="Salary Max" class="form-control" placeholder="e.g.$25,000" id="SalaryMax">
 					</div>
 						<div class="form-group col-3">
 						<label for="exampleFormControlSelect1">Salary Type</label>
-						 <select class="form-control" id="exampleFormControlSelect1">
+						 <select class="form-control" id="Salarytype">
 						<option><a href="up to 15 miles">Per annum</a></option>
-                              <option>Per month</option>
-                              <option>Per week</option>
-                              <option>Per day</option>
-                              <option>Per hour</option>
+                              <option class="salaryoption">Per month</option>
+                              <option class="salaryoption">Per week</option>
+                              <option class="salaryoption">Per day</option>
+                              <option class="salaryoption">Per hour</option>
                            </select>
                         </div>
 					<div class="form-group col-2">
 						<label for="exampleFormControlSelect1">Posted in the</label>
-						 <select class="form-control" id="exampleFormControlSelect1">
+						 <select class="form-control" id="Postedinthe">
 						<option><a href="up to 15 miles">Last 28 days</a></option>
-                              <option>Last 14 days</option>
-                              <option>Last 7 days</option>
-                              <option>Last 3 days</option>
-                              <option>Last 24 hours</option>                          
+                              <option class="postoption">Last 14 days</option>
+                              <option class="postoption">Last 7 days</option>
+                              <option class="postoption">Last 3 days</option>
+                              <option class="postoption">Last 24 hours</option>                          
                            </select>
                         </div>
                	   <div class="form-group col-3">
-						<button class="btn btn-primary btn-block">Find Jobs</button>
+						<button class="btn btn-primary btn-block" id="submit">Find Jobs</a></button>
+						   
 					</div>						
-					</div>
+
+                 </div>
+             </div>
+   
+		
 
 
-
-			</div>
 			<style>
 			body{
 				
@@ -117,6 +116,9 @@
 				width: auto;
 			}
 			</style>
+
+				
+				
 		
     <div class="card-deck">
 				<div class="card">
@@ -195,6 +197,6 @@
 
 
 
-		
+		<script src="js/function.js"></script>
 </body>
 </html>
