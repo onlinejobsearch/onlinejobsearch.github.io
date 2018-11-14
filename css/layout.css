@@ -89,6 +89,7 @@
   line-height: 12px;
   border-radius: 2px;
   color: white;
+  text-transform: uppercase;
 }
 
 /* Style the logo */
@@ -98,7 +99,7 @@
 #navbar a:hover {
   background-color: #ddd;
   color: black;
-  text-transform: uppercase;
+
 }
 
 /* Style the active/current link */
