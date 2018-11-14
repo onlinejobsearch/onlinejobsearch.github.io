@@ -75,6 +75,7 @@
   width: 100%;
   top: 0; /* At the top */
   z-index: 99; 
+  text-transform: uppercase;
   
 
 }
@@ -89,7 +90,7 @@
   line-height: 12px;
   border-radius: 2px;
   color: white;
-  text-transform: uppercase;
+
 }
 
 /* Style the logo */
