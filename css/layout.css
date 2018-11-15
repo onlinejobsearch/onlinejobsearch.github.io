@@ -76,6 +76,7 @@
   top: 0; /* At the top */
   z-index: 99; 
   text-transform: uppercase;
+
   
 
 }
@@ -91,6 +92,7 @@
   border-radius: 2px;
   color: white;
   margin: 0px 20px;
+  margin-top: 7px;
 
 }
 
